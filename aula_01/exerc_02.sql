@@ -25,6 +25,8 @@ INSERT INTO tb_produtos(nome, descricao,quantidade, preco)
 values ("peocessador", "intel core i5", 25, 300.00);
 INSERT INTO tb_produtos(nome, descricao,quantidade, preco)
 values ("fonte", "msi mag", 15, 300.00);
+INSERT INTO tb_produtos(nome, descricao,quantidade, preco)
+values ("monitor", "gamer lg led", 15, 499.00);
 
 SELECT * FROM tb_produtos; 
 
