@@ -3,20 +3,20 @@ CREATE DATABASE db_generation_game_online;
 USE db_generation_game_online;
 
 CREATE TABLE tb_classes (
-	id 	INT PRIMARY KEY,
+    id 	INT PRIMARY KEY,
     classificacao VARCHAR(255),
     caracteristicas VARCHAR(255)
 );
 
 INSERT INTO tb_classes (id, classificacao, caracteristicas)
 VALUES (1, "Ladino", "Combate corporal com adagas, katares, punhais e outras armas de punho"),
-	   (2, "Arqueiro", "Combate a distância com arco e flecha"),
-	   (3, "Guerreiro", "Combate corporal com espadas, lanças, machados, maças e escudos"),
+       (2, "Arqueiro", "Combate a distância com arco e flecha"),
+       (3, "Guerreiro", "Combate corporal com espadas, lanças, machados, maças e escudos"),
        (4, "Mago", "Combate a distância com magias de variados elementos"),
        (5, "Bárbaro", "Combate a distância com magias de variados elementos");
 
 CREATE TABLE tb_personagens (
-	nome VARCHAR(255),
+    nome VARCHAR(255),
     poder_ataque INT, 
     poder_defesa INT,
     classe_id INT, 
@@ -25,7 +25,7 @@ CREATE TABLE tb_personagens (
 
 INSERT INTO tb_personagens (nome, poder_ataque, poder_defesa, classe_id)
 VALUES ("Takumi", 3000, 2500, 2),
-	   ("Hugh", 1000, 2000, 4),
+       ("Hugh", 1000, 2000, 4),
        ("Adric", 2300, 500, 3),
        ("Nehaleen", 3100, 2200, 4),
        ("Orean", 1800, 1000, 1),
